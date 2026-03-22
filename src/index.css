@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  
+  --color-olive-50: #f7f7f2;
+  --color-olive-100: #efefe5;
+  --color-olive-200: #dadac2;
+  --color-olive-300: #bcbc94;
+  --color-olive-400: #a1a170;
+  --color-olive-500: #84844d;
+  --color-olive-600: #6a6a3e;
+  --color-olive-700: #5a5a35;
+  --color-olive-800: #4a4a2c;
+  --color-olive-900: #3e3e26;
+}
+
+@layer base {
+  body {
+    @apply text-stone-900 antialiased;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
